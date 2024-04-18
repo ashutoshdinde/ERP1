@@ -1,7 +1,7 @@
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        $enteredPassword = $_POST['password'] ?? ''; // Use null coalescing operator to handle undefined index
+        $enteredPassword = $_POST['password'] ?? ''; 
         $enteredAdminId = $_POST['admin_id'] ?? '';
 
         if ($enteredPassword === "admin" && $enteredAdminId === "admin") {
