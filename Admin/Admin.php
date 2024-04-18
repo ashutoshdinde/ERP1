@@ -75,7 +75,6 @@
             margin-bottom: 8px;
             color: #333;
         }
-        /* Your CSS styles here */
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if all required fields are set
     if (isset($_POST['stud_id'], $_POST['father_name'], $_POST['f_email'], $_POST['f_phone'], $_POST['f_address'], $_POST['f_occupation'], $_POST['mother_name'], $_POST['m_email'], $_POST['m_phone'], $_POST['m_address'], $_POST['m_occupation'])) {
 
         $stud_id = $_POST['stud_id'];
@@ -23,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt = $con->prepare("INSERT INTO guardian_info(stud_id, father_name, f_email, f_phone, f_address, f_occupation, mother_name, m_email, m_phone, m_address, m_occupation)
                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-            // Check for errors in prepare
             if (!$stmt) {
                 die('Prepare Error: ' . $con->error);
             }
@@ -54,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <style>
-        /* Reset some default styles */
+
         body,
         h1,
         h2,
@@ -110,7 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             resize: vertical;
         }
 
-        /* Style the form container */
+
         form {
             max-width: 600px;
             margin: 0 auto;
@@ -120,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Style the submit button */
+
         form button {
             background-color: #b2d8f5;
             color: #ffffff;
@@ -135,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color: #2980b9;
         }
 
-        /* Add some spacing between elements */
+      
         .inputfield:not(:last-child) {
             margin-bottom: 20px;
         }
