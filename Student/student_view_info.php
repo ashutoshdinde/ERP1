@@ -66,27 +66,25 @@ mysqli_close($adminConnection);
 
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
     }
 
     .photo-container {
-        width: 300px;
-        height: auto;
-        margin: 20px auto;
-        overflow: hidden;
+      width: 200px; 
+      height: auto;
+      margin: 0 auto; 
     }
 
     .photo-container img {
-        width: 100%;
-        height: auto;
+      max-width: 100%;
+      height: auto;
     }
-
     .student-info {
-        width: 80%;
+        width: 30%;
         margin: 0 auto;
         padding: 20px;
         background-color: #fff;
