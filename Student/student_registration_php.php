@@ -260,8 +260,7 @@
 
         <div class="inputfield" required>
           <div data-netlify-recaptcha="true"></div>
-        </div>
-            <!-- Other input fields go here -->
+      </div>
             <div class="inputfield btns" id="btn">
                 <button type="submit" value="Register">Register</button>
                 <button type="reset" value="Reset">Reset</button>
